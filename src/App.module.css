@@ -1,0 +1,7 @@
+.appcontainer {
+    width: 60vmax;
+    height: 80vh;
+    margin: 2vmax auto 0 auto;
+    /* padding: 2vmax; */
+    background-color: rgb(175, 242, 245);
+}
