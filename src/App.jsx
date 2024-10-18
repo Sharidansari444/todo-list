@@ -1,15 +1,15 @@
 
 import Create from "./components/Create";
 import Show from "./components/Show";
-import css from "./App.module.css";
+
 
 const App = () => {
     return (
         
-        <div className={css.appcontainer}>
+        <div className=" bg-dark h-100 "> 
             <h1>ToDo List</h1>
             <Create />
-            <hr style={{background:"rgb(8, 148, 155)", height:"10px"}} />
+            <hr className=" bg-info p-2" />
             <Show />
         </div>
     );

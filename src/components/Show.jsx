@@ -23,9 +23,9 @@ const Show = () => {
     };
     return (
         
-        <div className="container">
+        <div className="container ">
 
-            <div className="d-flex mt-5 flex-column " >
+            <div className="d-flex h-100 mt-5 flex-column " >
                
                 <div className=' table-responsive'>
                     <table className='table table-bordered table-striped table-hover'>
