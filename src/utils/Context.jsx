@@ -4,7 +4,7 @@ export const UserContext = createContext(null);
 
 const Context = (props) => {
     const [users, setusers] = useState([
-        { username: "Sharid", skill: "Ansari" },
+        { username: "Sharid Ansari", skill: "MERN stack" },
     ]);
 
     const [username, setusername] = useState("");
@@ -13,6 +13,7 @@ const Context = (props) => {
     const [active, setActive] = useState(null);
 
     const { children } = props;
+    
     return (
         <UserContext.Provider
             value={{

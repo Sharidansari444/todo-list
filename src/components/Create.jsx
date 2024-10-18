@@ -33,33 +33,22 @@ const Create = () => {
         setusername("");
         setskill("");
         setActive(null);
+        console.log(copyusers)
     };
 
     return (
-        <form className="container">
+        <form className="container d-flex">
             <input
-                className="form-control"
-                style={
-                    {
-                        padding: "0.5vmax",
-                        borderRadius: "5px",
-                        marginRight: "10px"
-
-                    }
-                }
+                 className="form-control w-25 "
                 onChange={(e) => setusername(e.target.value)}
                 value={username}
                 type="text"
                 placeholder="Enter Title here"
             />
-            <input
-                className="form-control"
-                style={
-                    {
-                        padding: "0.5vmax",
-                        borderRadius: "5px",
-                    }
-                }
+            <input 
+            className="form-control w-25"
+               
+                
                 onChange={(e) => setskill(e.target.value)}
                 value={skill}
                 type="text"
@@ -68,33 +57,17 @@ const Create = () => {
 
             {active === null ? (
                 <button
+                 className="btn btn-outline-warning ms-2 "
                     onClick={SubmitHandler}
                  
-                    style={{
-                        backgroundColor: " rgb(24, 226, 237)",
-                        color: "white",
-                        border: "none",
-                        padding: "1vmax",
-                        borderRadius: "10px",
-                        marginLeft: "10px",
-                        fontSize:"15px",
-                        fontWeight:"800"
-                    }}
                 >
                     Add Task
                 </button>
             ) : (
                 <button
+                className="btn btn-outline-success"
                     onClick={UpdateHandler}
                     
-                    style={{
-                        background: " lightgreen",
-                        color: "green   ",
-                        border: "none",
-                        borderRadius: "5px",
-                        padding: "1vmax",
-                        marginLeft: "10px"
-                    }}
                 >
                     Update
                 </button>
