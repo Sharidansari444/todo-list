@@ -39,16 +39,16 @@ const Create = () => {
     return (
         <form className="container d-flex">
             <input
-                 className="form-control w-25 "
+                className="form-control w-25 "
                 onChange={(e) => setusername(e.target.value)}
                 value={username}
                 type="text"
                 placeholder="Enter Title here"
             />
-            <input 
-            className="form-control w-25"
-               
-                
+            <input
+                className="form-control w-25 ms-3"
+
+
                 onChange={(e) => setskill(e.target.value)}
                 value={skill}
                 type="text"
@@ -57,17 +57,17 @@ const Create = () => {
 
             {active === null ? (
                 <button
-                 className="btn btn-outline-warning ms-2 "
+                    className="btn btn-outline-warning ms-2 "
                     onClick={SubmitHandler}
-                 
+
                 >
                     Add Task
                 </button>
             ) : (
                 <button
-                className="btn btn-outline-success"
+                    className="btn btn-outline-success"
                     onClick={UpdateHandler}
-                    
+
                 >
                     Update
                 </button>
