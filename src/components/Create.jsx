@@ -16,6 +16,10 @@ const Create = () => {
     const SubmitHandler = (event) => {
         event.preventDefault();
         const user = { username, skill };
+        if(!username || !skill){
+            alert("please fil the all input ")
+            return;
+        }
 
         // const copyusers = [...users];
         // copyusers.push(user);
@@ -44,6 +48,7 @@ const Create = () => {
                 value={username}
                 type="text"
                 placeholder="Enter Title here"
+                required 
             />
             <input
                 className="form-control w-25 ms-3"
@@ -53,6 +58,7 @@ const Create = () => {
                 value={skill}
                 type="text"
                 placeholder="Enter Description here"
+                required
             />
 
             {active === null ? (
